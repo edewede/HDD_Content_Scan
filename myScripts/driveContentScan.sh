@@ -20,7 +20,7 @@ read input
 		tree > "$d"_Barcode_"$barcode"_ContentScan.csv
 		ssconvert "$d"_Barcode_"$barcode"_ContentScan.csv "$d"_Barcode_"$barcode"_ContentScan.xls
 		rm "$d"_Barcode_"$barcode"_ContentScan.csv
-		cp "$d"_Barcode_"$barcode"_ContentScan.xls /Volumes/archive1/ALIAS/PreservationStaging/JavierK/HardDriveContentScanDocs //path to save to
+		cp "$d"_Barcode_"$barcode"_ContentScan.xls /../JavierK/HardDriveContentScanDocs //path to save excel file to
 	else
 		echo -e "\n*****Please re-run script to view options again.*****"
 	fi
