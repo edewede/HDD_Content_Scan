@@ -20,7 +20,7 @@ read input
 		tree > "$d"_Barcode_"$barcode"_ContentScan.csv
 		ssconvert "$d"_Barcode_"$barcode"_ContentScan.csv "$d"_Barcode_"$barcode"_ContentScan.xls
 		rm "$d"_Barcode_"$barcode"_ContentScan.csv
-		cp "$d"_Barcode_"$barcode"_ContentScan.xls /Volumes/archive1/ALIAS/PreservationStaging/JavierK/HardDriveContentScanDocs
+		cp "$d"_Barcode_"$barcode"_ContentScan.xls /Volumes/archive1/ALIAS/PreservationStaging/JavierK/HardDriveContentScanDocs //path to save to
 	else
 		echo -e "\n*****Please re-run script to view options again.*****"
 	fi
@@ -32,7 +32,7 @@ read UserEmail
 # email users (create html just for email)
 simpleTree=`tree -d -L 2`
 echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete - Barcode: $barcode" -- "$UserEmail"
-echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete" -- javier_kadry@paramount.com
-echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete" -- miki_fukushima@paramount.com
-echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete" -- MaryGrace_Nicolas@paramount.com
+echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete" -- user1@paramount.com
+echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete" -- user2@paramount.com
+echo -e "Title: $titleName \nDrive Name: $d \nBarcode: $barcode \n$simpleTree" |  mutt -a ./"$d"_Barcode_"$barcode"_ContentScan.xls -s "Drive Content Scan Complete" -- user3@paramount.com
 echo -e "Email sent. Thank you! \nExiting script."
