@@ -1,14 +1,14 @@
 ## Synopsis
-
+-- Harddrive Content scan --
 This shell scripts quickly identify the contents of a large harddrive (with tree structure) and then emails users with a shortened directory list while also attaching a full file list as an excel sheet.
 
 
 ## Motivation
-
+-- Harddrive Content scan --
 While working in an large film archive I kept getting requests for content logs of harddrives. So I wrote this script to quickly enter the Name of the title, it's library barcode, and then output the contents directly to the requester's email. Saved me a bunch of time. 
 
 ## Installation
-
+-- Harddrive Content scan --
 I install most of my tools via brew: 
 
 brew install tree (This installs the tree directory tool)  
